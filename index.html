@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Grocery Receipt</h1>
+    <form id="receipt_form" name="receipt_form" 
+            action="add.html" method="post">
+        <div>
+            <label for="customer_name">Customer Name:</label>
+            <input type="text" id="customer_name" name="customer_name">
+            <span id="customer_name_error">*</span>
+        </div>
+        
+        <div>
+            <label for="grocery_item">Grocery Item:</label>
+            <input type="text" id="grocery_item" name="grocery_item">
+            <span id="grocery_item_error">*</span>
+        </div>
+        <div>
+            <label for="unit_price">Unit Price</label>
+            <input type="text" id="unit_price" name="unit_price">
+            <span id="unit_price_error">*</span>
+        </div>
+        
+        <div>
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" name="quantity">
+            <span id="quantity_error">*</span>
+        </div>
+        
+        <div>
+            <label for="cash">Cash</label>
+            <input type="text" id="cash" name="cash">
+            <span id="cash_error">*</span>
+        </div>
+
+        <div>
+            <label>&nbsp;</label>
+            <input type="submit" id="display_receipt" value="Display Receipt">
+        </div>
+    </form>
+    <script src="email_list.js"></script>
+</body>
+</html>
